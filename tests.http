@@ -1,0 +1,14 @@
+@hostname = http://localhost:8888/.netlify/functions
+
+### fetch recipes
+get {{hostname}}/recipes
+
+### create recipe
+post {{hostname}}/recipes
+Content-Type: application/json
+
+{
+  "name": "Clutch Pizza",
+  "est_time_to_make_in_min": 45,
+  "description": "This is a pretty awesome pizza too"
+}
