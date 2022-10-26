@@ -8,7 +8,31 @@ post {{hostname}}/recipes
 Content-Type: application/json
 
 {
-  "name": "Clutch Pizza",
+  "name": "test pizza",
   "est_time_to_make_in_min": 45,
-  "description": "This is a pretty awesome pizza too"
+  "description": "This is a pretty awesome pizza too",
+  "ingredients": [
+    {
+      "name": "Sauce",
+      "amount": "1 cup"
+    }
+  ],
+  "steps": [
+    {
+      "number": 1,
+      "directions": "Lay out the dough"
+    },
+    {
+      "number": 2,
+      "directions": "Apply sauce"
+    },
+    {
+      "number": 3,
+      "directions": "Put the cheese on"
+    },
+    {
+      "number": 4,
+      "directions": "Cook at 500 for 10 min"
+    }
+  ]
 }
